@@ -1,153 +1,241 @@
-﻿<!DOCTYPE html><html lang="fa" dir="rtl">
+﻿<!DOCTYPE html>
+<html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>منو کافی‌شاپ</title>  <!-- فونت فارسی Vazirmatn از گوگل -->  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">  <style>
-    body {
-      font-family: 'Vazirmatn', sans-serif;
-      background-color: #fdfdfd;
-      color: #222;
-      direction: rtl;
-      margin: 2rem;
-      line-height: 1.6;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منوی کافه</title>
+    <style>
+        body {
+            font-family: 'Vazir', sans-serif; /* فونت فارسی */
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
-    h2 {
-      color: #444;
-      margin-top: 2rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-    }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+        .menu-category {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
 
-    li {
-      padding: 4px 0;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px dashed #ddd;
-    }
+        .menu-category h2 {
+            font-size: 24px;
+            color: #444;
+            margin-bottom: 10px;
+            text-align: right;
+        }
 
-    .item {
-      flex: 1;
-    }
+        .menu-item {
+            background-color: #dcdcdc;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #333;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
 
-    .price {
-      min-width: 60px;
-      text-align: left;
-    }
-  </style></head>
-<body>  <h2>*قهوه*</h2>
-  <ul>
-    <li><span class="item">اسپرسو عربیکا (سینگل)</span> <span class="price">90T</span></li>
-    <li><span class="item">اسپرسو عربیکا (دبل)</span> <span class="price">110T</span></li>
-    <li><span class="item">اسپرسو 60-40</span> <span class="price">75T</span></li>
-    <li><span class="item">اسپرسو 60-40</span> <span class="price">85T</span></li>
-    <li><span class="item">اسپرسو ربوستا (سینگل)</span> <span class="price">50T</span></li>
-    <li><span class="item">اسپرسو ربوستا (دبل)</span> <span class="price">60T</span></li>
-    <li><span class="item">آمریکانو عربیکا</span> <span class="price">105T</span></li>
-    <li><span class="item">آمریکانو 60-40</span> <span class="price">90T</span></li>
-    <li><span class="item">آمریکانو ربوستا</span> <span class="price">65T</span></li>
-    <li><span class="item">کاپوچینو</span> <span class="price">100T</span></li>
-    <li><span class="item">نسکافه</span> <span class="price">100T</span></li>
-    <li><span class="item">شیرکاکائو</span> <span class="price">100T</span></li>
-    <li><span class="item">لاته</span> <span class="price">110T</span></li>
-    <li><span class="item">موکا</span> <span class="price">130T</span></li>
-    <li><span class="item">کارامل ماکیاتو</span> <span class="price">130T</span></li>
-    <li><span class="item">هات چاکلت</span> <span class="price">130T</span></li>
-    <li><span class="item">وایت چاکلت</span> <span class="price">130T</span></li>
-    <li><span class="item">پینک چاکلت</span> <span class="price">130T</span></li>
-    <li><span class="item">شکلات فندوق</span> <span class="price">130T</span></li>
-    <li><span class="item">موکاتلا (موکا + نوتلا)</span> <span class="price">160T</span></li>
-    <li><span class="item">طعم دهنده</span> <span class="price">25T</span></li>
-  </ul>  <h2>*قهوه دمی*</h2>
-  <ul>
-    <li><span class="item">قهوه فرانسه</span> <span class="price">80T</span></li>
-    <li><span class="item">قهوه ترک</span> <span class="price">90T</span></li>
-    <li><span class="item">قهوه یونانی</span> <span class="price">100T</span></li>
-  </ul>  <h2>*چای و دمنوش*</h2>
-  <ul>
-    <li><span class="item">چای سیاه</span> <span class="price">60T</span></li>
-    <li><span class="item">چای سبز</span> <span class="price">75T</span></li>
-    <li><span class="item">چای ترش</span> <span class="price">75T</span></li>
-    <li><span class="item">چای آلبالو</span> <span class="price">80T</span></li>
-    <li><span class="item">پای انگلیسی</span> <span class="price">80T</span></li>
-    <li><span class="item">چای کرک</span> <span class="price">100T</span></li>
-    <li><span class="item">چای ماسالا</span> <span class="price">100T</span></li>
-    <li><span class="item">چای اسپایسی</span> <span class="price">100T</span></li>
-    <li><span class="item">دمنوش بهار نارنج</span> <span class="price">80T</span></li>
-    <li><span class="item">دمنوش پنیرک</span> <span class="price">80T</span></li>
-    <li><span class="item">دمنوش به لیمو</span> <span class="price">80T</span></li>
-    <li><span class="item">دمنوش گل گاو زبان</span> <span class="price">85T</span></li>
-    <li><span class="item">دمنوش پرتغال دارچین</span> <span class="price">90T</span></li>
-    <li><span class="item">دمنوش سرماخوردگی</span> <span class="price">90T</span></li>
-    <li><span class="item">دمنوش سیب دارچین</span> <span class="price">110T</span></li>
-    <li><span class="item">دمنوش دلخواه</span> <span class="price">120T</span></li>
-    <li><span class="item">دمنوش زعفران</span> <span class="price">150T</span></li>
-  </ul>  <h2>*بار سرد*</h2>
-  <ul>
-    <li><span class="item">لیموناد</span> <span class="price">110T</span></li>
-    <li><span class="item">موهیتو</span> <span class="price">120T</span></li>
-    <li><span class="item">رد موهیتو</span> <span class="price">130T</span></li>
-    <li><span class="item">بلومانستر</span> <span class="price">90T</span></li>
-    <li><span class="item">آناناس کولر</span> <span class="price">110T</span></li>
-    <li><span class="item">پرتغالینو</span> <span class="price">110T</span></li>
-    <li><span class="item">ام بلیت</span> <span class="price">110T</span></li>
-    <li><span class="item">کالماک</span> <span class="price">110T</span></li>
-    <li><span class="item">انرژی پلاس</span> <span class="price">110T</span></li>
-    <li><span class="item">توت فرنگی</span> <span class="price">130T</span></li>
-    <li><span class="item">شکو فروت</span> <span class="price">130T</span></li>
-    <li><span class="item">لواشک</span> <span class="price">130T</span></li>
-    <li><span class="item">خیار لیمونت</span> <span class="price">130T</span></li>
-    <li><span class="item">موز شکلات</span> <span class="price">150T</span></li>
-    <li><span class="item">پیشنهاد بار تندر</span> <span class="price">160T</span></li>
-  </ul>  <h2>*قهوه سرد*</h2>
-  <ul>
-    <li><span class="item">آیس آمریکانو</span> <span class="price">85T</span></li>
-    <li><span class="item">کلدبرو</span> <span class="price">120T</span></li>
-    <li><span class="item">آیس لاته</span> <span class="price">130T</span></li>
-    <li><span class="item">آفوکاتو</span> <span class="price">135T</span></li>
-    <li><span class="item">آیس موکا</span> <span class="price">150T</span></li>
-    <li><span class="item">آیس کارامل ماکیاتو</span> <span class="price">150T</span></li>
-    <li><span class="item">آیس پینک</span> <span class="price">150T</span></li>
-    <li><span class="item">آیس موکا نعنایی</span> <span class="price">160T</span></li>
-    <li><span class="item">آفوگاتو پلاس</span> <span class="price">180T</span></li>
-  </ul>  <h2>*شیک*</h2>
-  <ul>
-    <li><span class="item">شیک وانیل</span> <span class="price">150T</span></li>
-    <li><span class="item">شیک شکلات</span> <span class="price">150T</span></li>
-    <li><span class="item">شیک توت فرنگی</span> <span class="price">150T</span></li>
-    <li><span class="item">شیک موز</span> <span class="price">150T</span></li>
-    <li><span class="item">شیک شاتوت</span> <span class="price">150T</span></li>
-    <li><span class="item">شیک موز شکلات</span> <span class="price">165T</span></li>
-    <li><span class="item">شیک شکلات تکه‌ای</span> <span class="price">175T</span></li>
-    <li><span class="item">شیک اسپرسو</span> <span class="price">180T</span></li>
-    <li><span class="item">شیک نسکافه</span> <span class="price">180T</span></li>
-    <li><span class="item">شیک کره بادام زمینی</span> <span class="price">180T</span></li>
-    <li><span class="item">شیک بیسکویت لوتوس</span> <span class="price">200T</span></li>
-    <li><span class="item">شیک نوتلا</span> <span class="price">200T</span></li>
-    <li><span class="item">شیک کره بادام + نوتلا</span> <span class="price">220T</span></li>
-    <li><span class="item">شیک موز پسته</span> <span class="price">230T</span></li>
-    <li><span class="item">بشقاب بستنی</span> <span class="price">--</span></li>
-  </ul>  <h2>*دسر*</h2>
-  <ul>
-    <li><span class="item">رشته</span> <span class="price">50T</span></li>
-    <li><span class="item">خشکار</span> <span class="price">60T</span></li>
-    <li><span class="item">موچی</span> <span class="price">95T</span></li>
-    <li><span class="item">کیک روز</span> <span class="price">--</span></li>
-    <li><span class="item">کونافه بستنی</span> <span class="price">--</span></li>
-  </ul>  <h2>*صبحانه و عصرانه*</h2>
-  <ul>
-    <li><span class="item">املت قارچ</span> <span class="price">140T</span></li>
-    <li><span class="item">املت اسفناج</span> <span class="price">110T</span></li>
-    <li><span class="item">املت گوجه</span> <span class="price">110T</span></li>
-    <li><span class="item">املت سوسیس</span> <span class="price">110T</span></li>
-    <li><span class="item">املت اورنج لاو</span> <span class="price">130T</span></li>
-    <li><span class="item">املت ۴×۱</span> <span class="price">170T</span></li>
-    <li><span class="item">پیشنهاد ویژه</span> <span class="price">--</span></li>
-  </ul></body>
+        .menu-item:hover {
+            background-color: #a9a9a9;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item span {
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* تزیینات روی هر آیتم */
+        .menu-item:hover {
+            cursor: pointer;
+            background-color: #a9a9a9;
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>منوی کافه</h1>
+
+    <div class="menu">
+        <!-- قهوه -->
+        <div class="menu-category">
+            <h2>قهوه</h2>
+            <div class="menu-item">
+                اسپرسو عربیکا (سینگل) <span>90T</span>
+            </div>
+            <div class="menu-item">
+                اسپرسو عربیکا (دبل) <span>110T</span>
+            </div>
+            <div class="menu-item">
+                اسپرسو 60-40 <span>75T</span>
+            </div>
+            <div class="menu-item">
+                اسپرسو ربوستا (سینگل) <span>50T</span>
+            </div>
+            <div class="menu-item">
+                آمریکنو عربیکا <span>105T</span>
+            </div>
+            <div class="menu-item">
+                کاپوچینو <span>100T</span>
+            </div>
+            <div class="menu-item">
+                نسکافه <span>100T</span>
+            </div>
+            <div class="menu-item">
+                شیرکاکائو <span>100T</span>
+            </div>
+            <div class="menu-item">
+                لاتِه <span>110T</span>
+            </div>
+            <div class="menu-item">
+                موکا <span>130T</span>
+            </div>
+            <div class="menu-item">
+                کارامل ماکیاتو <span>130T</span>
+            </div>
+        </div>
+
+        <!-- قهوه دمی -->
+        <div class="menu-category">
+            <h2>قهوه دمی</h2>
+            <div class="menu-item">
+                قهوه فرانسه <span>80T</span>
+            </div>
+            <div class="menu-item">
+                قهوه ترک <span>90T</span>
+            </div>
+            <div class="menu-item">
+                قهوه یونانی <span>100T</span>
+            </div>
+        </div>
+
+        <!-- چای و دمنوش -->
+        <div class="menu-category">
+            <h2>چای و دمنوش</h2>
+            <div class="menu-item">
+                چای سیاه <span>60T</span>
+            </div>
+            <div class="menu-item">
+                چای سبز <span>75T</span>
+            </div>
+            <div class="menu-item">
+                دمنوش بهار نارنج <span>80T</span>
+            </div>
+            <div class="menu-item">
+                دمنوش پنیرک <span>80T</span>
+            </div>
+            <div class="menu-item">
+                دمنوش زعفران <span>150T</span>
+            </div>
+        </div>
+
+        <!-- بار سرد -->
+        <div class="menu-category">
+            <h2>بار سرد</h2>
+            <div class="menu-item">
+                لیموناد <span>110T</span>
+            </div>
+            <div class="menu-item">
+                موهیتو <span>120T</span>
+            </div>
+            <div class="menu-item">
+                آناناس کولر <span>110T</span>
+            </div>
+            <div class="menu-item">
+                بلومانستر <span>90T</span>
+            </div>
+        </div>
+
+        <!-- قهوه سرد -->
+        <div class="menu-category">
+            <h2>قهوه سرد</h2>
+            <div class="menu-item">
+                آیس آمریکانو <span>85T</span>
+            </div>
+            <div class="menu-item">
+                کلدبرو <span>120T</span>
+            </div>
+            <div class="menu-item">
+                آیس لاته <span>130T</span>
+            </div>
+            <div class="menu-item">
+                آیس موکا <span>150T</span>
+            </div>
+        </div>
+
+        <!-- شیک -->
+        <div class="menu-category">
+            <h2>شیک</h2>
+            <div class="menu-item">
+                شیک وانیل <span>150T</span>
+            </div>
+            <div class="menu-item">
+                شیک شکلات <span>150T</span>
+            </div>
+            <div class="menu-item">
+                شیک توت فرنگی <span>150T</span>
+            </div>
+            <div class="menu-item">
+                شیک موز <span>150T</span>
+            </div>
+        </div>
+
+        <!-- دسر -->
+        <div class="menu-category">
+            <h2>دسر</h2>
+            <div class="menu-item">
+                رشته <span>50T</span>
+            </div>
+            <div class="menu-item">
+                خشکار <span>60T</span>
+            </div>
+            <div class="menu-item">
+                موچی <span>95T</span>
+            </div>
+        </div>
+
+        <!-- صبحانه و عصرانه -->
+        <div class="menu-category">
+            <h2>صبحانه و عصرانه</h2>
+            <div class="menu-item">
+                املت قارچ <span>140T</span>
+            </div>
+            <div class="menu-item">
+                املت اسفناج <span>110T</span>
+            </div>
+            <div class="menu-item">
+                املت گوجه <span>110T</span>
+            </div>
+            <div class="menu-item">
+                املت سوسیس <span>110T</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
 </html>
-
